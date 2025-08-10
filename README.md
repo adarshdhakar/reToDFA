@@ -6,7 +6,14 @@ The core logic, originally written in C++, has been translated to JavaScript to 
 
 ---
 
-### 🚀 Live Demo
+### Developed By
+
+- **Name**: Adarsh Dhakar
+- **Roll No**: 22CS01040
+
+---
+
+### Live Demo
 
 *[Repo Link](https://github.com/adarshdhakar/reToDFA)*
 
@@ -14,7 +21,7 @@ The core logic, originally written in C++, has been translated to JavaScript to 
 
 ---
 
-### ✨ Features
+### Features
 
 - **RE to DFA Conversion**: Implements the standard algorithm for converting a regular expression to an NFA (using Thompson's construction) and then to a DFA (using the subset construction method).
 - **Implicit Concatenation**: Automatically adds concatenation operators (`.`) where needed, so users can write expressions like `(a+b)a` instead of `(a+b).a`.
@@ -26,7 +33,7 @@ The core logic, originally written in C++, has been translated to JavaScript to 
 
 ---
 
-### 📸 Screenshots
+### Screenshots
 
 | 2D Graph View | 3D Graph View |
 | :---: | :---: |
@@ -34,7 +41,7 @@ The core logic, originally written in C++, has been translated to JavaScript to 
 
 ---
 
-### 🛠️ Technology Stack
+### Technology Stack
 
 - **Frontend**: [React](https://reactjs.org/)
 - **3D Rendering**: [Three.js](https://threejs.org/) via [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) & [Drei](https://github.com/pmndrs/drei)
@@ -44,19 +51,22 @@ The core logic, originally written in C++, has been translated to JavaScript to 
 
 ---
 
-### ⚙️ Getting Started
+### Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-#### Prerequisites
+#### Web Version
 
+Follow these instructions to get a copy of the project up and running on your local machine.
+
+**Prerequisites:**
 You need to have [Node.js](https://nodejs.org/) (version 14 or later) and [npm](https://www.npmjs.com/) installed on your machine.
 
-#### Installation
+**Installation:**
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/adarshdhakar/reToDFA.git
+    git clone [https://github.com/adarshdhakar/reToDFA.git](https://github.com/adarshdhakar/reToDFA.git)
     cd reToDFA
     ```
 
@@ -71,9 +81,34 @@ You need to have [Node.js](https://nodejs.org/) (version 14 or later) and [npm](
     ```
     The application should now be running on `http://localhost:5173` (or another port if specified).
 
+#### C++ Version (Command-Line)
+
+Follow these instructions to run the original C++ implementation.
+
+**Prerequisites:**
+You need a C++ compiler, such as [G++](https://gcc.gnu.org/install/), installed on your system.
+
+**Compilation & Execution:**
+
+1.  **Navigate to the C++ source directory** (assuming it's in a folder named `cpp`):
+    ```bash
+    cd cpp 
+    ```
+
+2.  **Compile the code:**
+    ```bash
+    g++ regularExpressionToDFA.cpp -o re_to_dfa
+    ```
+
+3.  **Run the executable:**
+    ```bash
+    ./re_to_dfa
+    ```
+    The program will run in your terminal and prompt you for input.
+
 ---
 
-### 📖 How to Use
+### How to Use
 
 1.  **Define the Alphabet**: In the "Alphabet" input field, enter the symbols of your alphabet, separated by commas (e.g., `a,b`).
 2.  **Enter the Regular Expression**: In the "Regular Expression" field, type the expression you want to convert (e.g., `(a+b)*a`).
@@ -81,7 +116,7 @@ You need to have [Node.js](https://nodejs.org/) (version 14 or later) and [npm](
 3.  **Generate**: Click the "Generate DFA & Graph" button.
 4.  **View Results**:
     - The **Processing Details** card shows the postfix version of your expression.
-    - The **DFA Graphs** card displays the 2D and 3D visualizations. You can interact with the 3D graph by clicking and dragging to rotate, scrolling to zoom, and right-clicking to pan.
+    - The **DFA Graphs** card displays the 2D and 3D visualizations. You can interact with the 3D graph by clicking and dragging to rotate, scrolling to zoom.
     - The **DFA Transition Table** provides a formal definition of the generated automaton.
 
 ---
